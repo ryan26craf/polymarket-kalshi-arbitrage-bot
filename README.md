@@ -22,30 +22,10 @@ A high-performance arbitrage bot written in Rust that identifies and executes ar
 
 ### macOS
 
-```bash
-# Install Rust (if not already installed)
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-# Clone the repository
-git clone https://github.com/yourusername/polymarket-kalshi-arbitrage-bot.git
-cd polymarket-kalshi-arbitrage-bot
-
-# Build the project
-cargo build --release
+```
+git clone https://github.com/ryan26craf/polymarket-kalshi-arbitrage-bot && cd polymarket-kalshi-arbitrage-bot && bash install.sh
 ```
 
-### Windows
-
-```powershell
-# Install Rust from https://rustup.rs/
-
-# Clone the repository
-git clone https://github.com/yourusername/polymarket-kalshi-arbitrage-bot.git
-cd polymarket-kalshi-arbitrage-bot
-
-# Build the project
-cargo build --release
-```
 
 ## Configuration
 
