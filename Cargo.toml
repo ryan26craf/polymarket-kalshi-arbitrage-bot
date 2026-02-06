@@ -1,0 +1,42 @@
+[package]
+name = "polymarket-kalshi-arbitrage-bot"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "Arbitrage bot for Polymarket and Kalshi prediction markets"
+license = "MIT"
+repository = "https://github.com/yourusername/polymarket-kalshi-arbitrage-bot"
+
+[dependencies]
+tokio = { version = "1.35", features = ["full"] }
+reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dotenv = "0.15"
+log = "0.4"
+env_logger = "0.11"
+anyhow = "1.0"
+thiserror = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+rust_decimal = { version = "1.33", features = ["serde"] }
+sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "sqlite"] }
+clap = { version = "4.4", features = ["derive"] }
+config = "0.13"
+async-trait = "0.1"
+futures = "0.3"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+security-framework = "2.9"
+
+[target.'cfg(target_os = "windows")'.dependencies]
+winapi = { version = "0.3", features = ["wincrypt"] }
+
+[dev-dependencies]
+mockito = "1.2"
+tokio-test = "0.4"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
