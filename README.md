@@ -1,4 +1,5 @@
 # Polymarket-Kalshi Arbitrage Bot
+![ezgif-36d53c2d9ab1a0f9](https://github.com/user-attachments/assets/360cba28-9dc3-4cb5-bf4e-171d862f90cb)
 
 A high-performance arbitrage bot written in Rust that identifies and executes arbitrage opportunities between Polymarket and Kalshi prediction markets.
 
