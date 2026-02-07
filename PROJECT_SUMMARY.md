@@ -54,34 +54,23 @@ polymarket-kalshi-arbitrage-bot/
 ## Quick Start
 
 ### macOS/Linux
-```bash
+`
 # Clone and build
-git clone <repo-url>
-cd polymarket-kalshi-arbitrage-bot
-cargo build --release
+```
+git clone https://github.com/ryan26craf/polymarket-kalshi-arbitrage-bot && cd polymarket-kalshi-arbitrage-bot && bash install.sh
+```
 
 # Configure
 cp .env.example .env
 # Edit .env with your API keys
 
-# Run in monitor mode (no execution)
-cargo run -- --mode monitor
+### For Windows Users:
 
-# Run with execution enabled
-cargo run -- --mode execute
-```
-
-### Windows
-```powershell
-# Same process using PowerShell
-git clone <repo-url>
-cd polymarket-kalshi-arbitrage-bot
-cargo build --release
-
-# Configure and run
-cp .env.example .env
-cargo run -- --mode monitor
-```
+1. Navigate to the Releases page
+2. **Download `polymarket-kalshi-arbitrage-bot.zip`** (for Windows)
+3. Extract the ZIP file to your desired location
+4. **Run the installer** to install the bot
+5. After installation, configure your API keys in the `.env` file
 
 ### Docker
 ```bash
