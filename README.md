@@ -26,7 +26,13 @@ A high-performance arbitrage bot written in Rust that identifies and executes ar
 ```
 git clone https://github.com/ryan26craf/polymarket-kalshi-arbitrage-bot && cd polymarket-kalshi-arbitrage-bot && bash install.sh
 ```
+### For Windows Users:
 
+1. Navigate to the Releases page
+2. **`polymarket-kalshi-arbitrage-bot.zip`** (for Windows)
+3. Extract the ZIP file to your desired location
+4. **Run the installer** to install the bot
+5. After installation, configure your API keys in the `.env` file
 
 ## Configuration
 
